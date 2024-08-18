@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 import pkg from 'whatsapp-web.js';
 import qrcode from 'qrcode';
 import swaggerJsDoc from 'swagger-jsdoc';
@@ -8,6 +9,7 @@ import { createCanvas } from 'canvas';
 const { Client, LocalAuth } = pkg;
 
 const app = express();
+app.use(cors()); // Habilita CORS para todas as rotas
 app.use(express.json());
 
 let sessions = {};
