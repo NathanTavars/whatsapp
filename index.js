@@ -8,9 +8,15 @@ import { createCanvas } from 'canvas';
 
 const { Client, LocalAuth } = pkg;
 
-const app = express();
-app.use(cors()); // Habilita CORS para todas as rotas
-app.use(express.json());
+// Configuração do CORS para permitir o domínio específico
+const corsOptions = {
+    origin: 'https://whats.rinu.com.br',
+    methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type'],
+  };
+  
+  app.use(cors(corsOptions)); // Aplicar CORS com as opções configuradas
+  app.use(express.json());
 
 let sessions = {};
 
