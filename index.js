@@ -33,7 +33,7 @@ const swaggerOptions = {
     },
     servers: [
       {
-        url: 'http://localhost:3031',
+        url: 'http://31.187.74.76:3031',
       },
     ],
   },
