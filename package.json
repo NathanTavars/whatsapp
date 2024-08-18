@@ -1,0 +1,24 @@
+{
+  "name": "teste",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "canvas": "^2.11.2",
+    "express": "^4.19.2",
+    "playwright": "^1.46.1",
+    "qrcode": "^1.5.4",
+    "qrcode-terminal": "^0.12.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "venom-bot": "^4.0.0",
+    "whatsapp-web.js": "^1.25.0"
+  }
+}
